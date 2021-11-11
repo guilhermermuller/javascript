@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte de País</title>
+</head>
+<body>
+    <h1>Teste de País</h1>
+    <p>
+        País de residencia: <input type="text" id="country"> <input type="button" value="Enviar" onclick="calcular()">
+    </p>
+    <div id="nationality"></div>
+
+    <script>
+        function calcular() {
+            var country = window.document.getElementById('country').value
+            var res = window.document.getElementById('nationality')
+            if (country == 'Brasil') {
+                res.innerHTML = `<p>Você é brasileiro</p>`
+            } else {
+                res.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+
+        }
+    </script>
+</body>
+</html>
